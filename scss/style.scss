@@ -1,0 +1,76 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'animate';
+
+
+header {
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: rgba($color: #000000, $alpha: 0.1)
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  & button {
+    font-family: inherit;
+  }
+}
+
+.create-box {
+  display: none;
+  width: 380px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba($color: #000000, $alpha: 0.5);
+  margin: 10px auto 10px;
+  padding: 20px;
+  border-radius: 5px;
+
+  & textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    resize: none;
+    padding: 2px 5px;
+  }
+
+  & button {
+    width: fit-content;
+  }
+}
+
+.flashcards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.flashcard {
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word; // new 
+  // display: flex;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.5);
+}
+
+.flashcard h2{
+  font-size: 24px;
+  // width: 100%;
+}
+
+@import 'media';
+
